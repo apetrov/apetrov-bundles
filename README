@@ -1,0 +1,16 @@
+Commands:
+* Format ruby code
+* Convert ERB to HAML
+* Translate Word with translate.google.com
+* Manage mongrel
+
+Snippets
+* make_resourceful
+* restful_authentication
+
+To install with Git:
+  mkdir -p ~/Library/Application\ Support/TextMate/Bundles
+  cd ~/Library/Application\ Support/TextMate/Bundles
+  git clone git@github.com:apetrov/apetrov-bundles.git
+  mv apetrov-bundles "Adhoc Bundles.tmbundle"
+  osascript -e 'tell app "TextMate" to reload bundles'

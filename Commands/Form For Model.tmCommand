@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -rjcode -KU
+require ENV['TM_SUPPORT_PATH'] + '/lib/textmate.rb'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
+require ENV['TM_BUNDLE_SUPPORT']+'/schema_parser.rb'
+require ENV['TM_BUNDLE_SUPPORT']+'/form_builder.rb'
+FormBuilder.form_for(STDIN.read)
+</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^@F</string>
+	<key>name</key>
+	<string>Form For Model</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.ruby.rails, text.html.ruby, text.haml</string>
+	<key>tabTrigger</key>
+	<string>ffm</string>
+	<key>uuid</key>
+	<string>8A57E321-7F1D-41C4-AE4D-C659E32C8EC7</string>
+</dict>
+</plist>

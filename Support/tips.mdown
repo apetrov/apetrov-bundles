@@ -1,0 +1,180 @@
+# TextMate Tips Guide #
+
+
+##Useful cheats
+
+### Column selection/edit ###
+* Move cursor on the top-left corner of the block
+* Hold <button>⇧</button>
+* Move cursor on the bottom-right corner of the block
+* Press <button>⌥</button>
+
+## Bookmarking ##
+* <button>FN F2</button> Goto next bookmark                   
+* <button>FN⌘ F2</button> Add new bookmark
+
+## TextMate ##
+<table>
+  <tr>
+    <th>Sequence</th>
+    <th>Description</th>
+  </tr>
+  <tr>    
+    <td><button>⌘^⌥C </button></td>
+    <td>Commands editor</td>
+  </tr>
+  <tr>
+    <td>* <button>⌘^⌥B </button></td>
+    <td>        Bundle editor</td>
+  </tr>
+  <tr>
+    <td>* <button>⌘⌥O</button></td>
+    <td>          Override mode</td>
+  </tr>
+  <tr>
+    <td>* <button>⌘⌥E</button></td>
+    <td>          Freehand edit mode</td>
+  </tr>
+  <tr>
+    <td>* <button>⌘⌥I</button></td>
+    <td>          Show non-printable chars</td>
+  </tr>
+  <tr>
+    <td>* <button>⌘⌥L</button></td>
+    <td>     Show lines numbers  (left side) </td>
+  </tr>
+  <tr>
+    <td>* <button>⌘⌥B</button></td>
+    <td>                Show bookmark bar</td>
+  </tr>
+  <tr>
+    <td>* <button>⌘⌥W</button></td>
+    <td>     Word wrap</td>
+  </tr>
+  <tr>
+    <td>* <button>⌘⌥arrow </button></td>
+    <td>     Switch files</td>
+  </tr>
+  <tr>
+    <td>* <button>^⌥⇧R</button></td>
+    <td>         Language Ruby,Ruby On Rails, HAML, RSpec, RJS, SQL (Rails)</td>
+  </tr>
+  <tr>
+    <td>* <button>^⌥⇧H</button></td>
+    <td>         Language HTML, Ruby HTML</td>
+  </tr>
+  <tr>
+    <td>* <button>^⌥⇧J</button></td>
+    <td>         Language Javascript, Java, JavaScript Rails</td>
+  </tr>
+  <tr>
+    <td>* <button>^⌥⇧S</button></td>
+    <td>         Language SQL, Shell</td>
+  </tr>
+  <tr>
+    <td>* <button>^⌥⇧C</button></td>
+    <td>         Language CSS</td>
+  </tr>
+</table>
+
+
+## Text Edit ##
+* <button>⌘L</button>           Select current line
+* <button>⌘^↑</button><button>⌘^↓</button>                   move line
+* <button>⌘^⌥P</button>      Preview document in browser
+* <button>⌘^⌥V</button>      insert from buffer with history 
+* <button>⌘^⇧X</button>      Make file executable (chmod +x)
+* <button>⌘^⇧W</button>      wrap each line
+* <button>^⇧W   </button>       Wrap selected block
+* <button>⌘⌥R</button>     Filter through shell command
+* <button>⌘⌥A</button>     Add text on  each of all selected lines
+* <button>⌘⇧J</button>     move cursor on central line
+* <button>^S</button>     Inline direct search
+* <button>^A</button>     Move cursor to the begin of line
+* <button>^E</button>     Move cursor to the EOL
+* <button>^U</button>     Convert word or selected text to upper case
+* <button>^⇧U</button>      Convert word or selected text to down case
+* <button>^⇧G</button>      Convert word or selected text to opposite case
+
+* <button>^D</button>     Delete char
+* <button>^K</button>     Delete from cursor to the EOL
+* <button>^Y</button>     Yank
+* <button>^T</button>     Move line up
+* <button>^W</button>     Select word
+* <button>^⇧K</button>      delete current line
+* <button>^⇧D</button>      duplicate line
+* <button>^⇧J</button>      Join current line with next one
+* <button>^⇧N</button>                 document statistic
+* <button>⌥⇥</button>   Indent line with tab
+* <button>⌥⇧⇥</button>   Remove one tab
+  
+
+
+## Source Edit ##
+* <button>^⇧Q</button>      Execute selected text or line as SQL Query
+* <button>^⇧B</button>      Banner comment box
+* <button>^⇧,</button>      New tag
+* <button>^⇧- </button>     Switch variable name type camel/underscore
+* <button>^⇧V</button>      validate syntax
+* <button>⌘+ENTER</button> Go to next line
+
+## Ruby Edit ##
+* <button>⌘R</button>           Run as ruby
+* <button>⌘⇧D</button>         open require
+* <button>^⇧E</button>      Run ruby and insert output
+* <button>^⇧[</button>      Switch ruby block type
+
+## Project ##
+* <button>⌘^B</button>     show code browser
+* <button>⌘^R</button>     show current file in project drawer
+* <button>⌘^⇧D</button>      difference
+* <button>⌘⌥'</button>     Switch to between editor and project
+* <button>⌘⇧K</button>     Go to file
+* <button>^⇧\</button>                 database tasks
+* <button>^⇧A</button>      SMC menu
+
+## Ruby on Rails Edit ##
+* <button>⌘^⇧S</button>      Show model schema
+* <button>⌘⌥⇧↓</button>         Switch between action/helper/model/controller. TODO tips
+* <button>⌘⌥↓</button>          Switch between action/controller model/controller. TODO tips
+* <button>^⇧M</button>          Quick migration
+* <button>^⇧\</button>          Migrate tasks menu
+* <button>⌘^⌥⇧\</button>        Script generate menu
+* <button>^⇧R</button>      Rake menu
+* <button>⌘⇧D</button>      Run Test file/Run selected spec file
+
+## Snippets ##
+### Migration ###
+`t.`⇥ - Possible columns
+
+
+
+## Other ##
+* <button>⌘⌥;</button>                grammar
+
+## Set up ##
+
+### Appearance  ###
+* [idlefingers Theme](http://idlefingers.co.uk/) - Nice theme
+* [Bitstream Vera Fonts README](http://www.gnome.org/fonts/) - Nice font
+
+### Plugins and bundles ###
+* [GoToFile Bundle](http://github.com/amiel/gotofile.tmbundle/tree/master)
+* [Project+](http://ciaranwal.sh/2008/08/05/textmate-plug-in-projectplus)
+
+<pre><b>Ruby</b><br/>
+svn co http://svn.textmate.org/trunk/Bundles/Ruby.tmbundle/ /Applications/TextMate.app/Contents/SharedSupport/Bundles/ 
+</pre>
+
+<pre><b>Ruby on Rails</b><br/>
+svn co http://svn.textmate.org/trunk/Bundles/Ruby\ on\ Rails.tmbundle/ /Applications/TextMate.app/Contents/SharedSupport/Bundles/ </pre>
+
+<pre><b>SVN Bundles</b><br/>
+svn co http://svn.textmate.org/trunk/Bundles/Subversion.tmbundle/ /Applications/TextMate.app/Contents/SharedSupport/Bundles/
+</pre>
+<pre><b>HAML Bundles</b><br/>
+svn co http://svn.textmate.org/trunk/Bundles/Ruby\ Haml.tmbundle/ /Applications/TextMate.app/Contents/SharedSupport/Bundles/ 
+</pre>
+<pre><b>RSpec</b><br/>
+svn co http://svn.textmate.org/trunk/Bundles/Ruby\ RSpec.tmbundle/ /Applications/TextMate.app/Contents/SharedSupport/Bundles/
+</pre>

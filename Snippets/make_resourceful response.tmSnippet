@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>response_for :${1:create} do |wants|
+	wants.html{$0}
+	wants.js
+end</string>
+	<key>name</key>
+	<string>make_resourceful response</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>mrr</string>
+	<key>uuid</key>
+	<string>934913F9-9A00-475D-871F-7A96C46C7102</string>
+</dict>
+</plist>

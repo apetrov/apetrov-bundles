@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -rjcode -KU
+require ENV['TM_SUPPORT_PATH'] + '/lib/textmate.rb'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
+require ENV['TM_BUNDLE_SUPPORT']+'/schema_parser.rb'
+require ENV['TM_BUNDLE_SUPPORT']+'/model_autocomplete.rb'
+TextMate::UI.complete(ModelAutocomplete.new.parse(STDIN.read).map{|t| {'display'=&gt;"#{t.first}"}})
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^@</string>
+	<key>name</key>
+	<string>Model Autocomplete</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>uuid</key>
+	<string>28D137E1-7BBA-43DB-ABF3-4BB8C404595F</string>
+</dict>
+</plist>
