@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -rjcode -KU
+require ENV['TM_SUPPORT_PATH'] + '/lib/textmate.rb'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
+rails_root = ENV["TM_PROJECT_DIRECTORY"]
+controller_path = ENV["TM_FILEPATH"]
+controller_name = ENV["TM_FILENAME"].gsub("_controller.rb","")
+views_path = controller_path.gsub(rails_root,"").gsub("/app/controllers","/app/views").gsub(ENV["TM_FILENAME"],controller_name)
+Dir.chdir(rails_root + views_path)
+files = Dir["*"]
+file=TextMate::UI.menu(files)
+TextMate.go_to({:file=&gt;rails_root + views_path+"/"+files[file]})</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^L</string>
+	<key>name</key>
+	<string>go to views</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>uuid</key>
+	<string>18665EE1-FB15-4C30-AC0E-488CD05241A4</string>
+</dict>
+</plist>
