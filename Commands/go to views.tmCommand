@@ -14,7 +14,11 @@ controller_name = ENV["TM_FILENAME"].gsub("_controller.rb","")
 views_path = controller_path.gsub(rails_root,"").gsub("/app/controllers","/app/views").gsub(ENV["TM_FILENAME"],controller_name)
 Dir.chdir(rails_root + views_path)
 files = Dir["*"]
+if files.length &gt; 1
 file=TextMate::UI.menu(files)
+else
+file = 0
+end
 TextMate.go_to({:file=&gt;rails_root + views_path+"/"+files[file]})</string>
 	<key>input</key>
 	<string>none</string>
