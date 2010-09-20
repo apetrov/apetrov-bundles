@@ -6,12 +6,12 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh" html_header "Ruby on Rails Bundle Help" "Development log"
-echo $TM_PROJECT_DIRECTORY | /Users/apetrov/projects/scripts/recent_request.rb
+echo $TM_PROJECT_DIRECTORY | ruby "$TM_BUNDLE_SUPPORT"/recent_request.rb
 html_footer</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>^i</string>
+	<string>^@M</string>
 	<key>name</key>
 	<string>Log file</string>
 	<key>output</key>
