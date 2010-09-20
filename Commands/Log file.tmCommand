@@ -5,11 +5,9 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh"
-html_header "$title" "Development log"
-tail -n 200 $TM_PROJECT_DIRECTORY/log/development.log | awk '{print ($0,"&lt;br&gt;")}'
-html_footer 
-</string>
+	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh" html_header "Ruby on Rails Bundle Help" "Development log"
+echo $TM_PROJECT_DIRECTORY | /Users/apetrov/projects/scripts/recent_request.rb
+html_footer</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
@@ -18,8 +16,6 @@ html_footer
 	<string>Log file</string>
 	<key>output</key>
 	<string>showAsHTML</string>
-	<key>scope</key>
-	<string>source.ruby.rails</string>
 	<key>uuid</key>
 	<string>240C0D89-BD9F-4094-A3F4-3133B36C0A1E</string>
 </dict>
