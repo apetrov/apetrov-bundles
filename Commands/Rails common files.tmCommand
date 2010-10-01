@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -rjcode -KU
+require ENV['TM_SUPPORT_PATH'] + '/lib/textmate.rb'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
+
+collection = ["app/controllers/application.rb","config/database.yml",'config/environment.rb','config/routes.rb','config/deploy.rb','config/environments/development.rb']
+
+result = collection[TextMate::UI.menu(collection)]
+puts result
+TextMate.go_to({:file=&gt; ENV["TM_PROJECT_DIRECTORY"]+"//"+result})</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>~@R</string>
+	<key>name</key>
+	<string>Rails common files</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>7A62A0E2-8BAC-4C53-A290-6704A31F711E</string>
+</dict>
+</plist>

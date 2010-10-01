@@ -5,18 +5,18 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>/bin/bash "$TM_SUPPORT_PATH/lib/webpreview.sh" html_header "Ruby on Rails Bundle Help" "Development log"
-echo $TM_PROJECT_DIRECTORY | ruby "$TM_BUNDLE_SUPPORT"/recent_request.rb
-html_footer</string>
+	<string>source ~/.bash_profile
+pkill thin
+cd $TM_PROJECT_DIRECTORY &amp;&amp; thin start -d</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
 	<string>^@M</string>
 	<key>name</key>
-	<string>Log file</string>
+	<string>thin restart</string>
 	<key>output</key>
-	<string>showAsHTML</string>
+	<string>discard</string>
 	<key>uuid</key>
-	<string>240C0D89-BD9F-4094-A3F4-3133B36C0A1E</string>
+	<string>3373211D-4ECD-4BC2-824E-CC4A0C123FD7</string>
 </dict>
 </plist>
