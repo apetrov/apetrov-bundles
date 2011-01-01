@@ -15,7 +15,7 @@ AlternateFile.open('')</string>
 	<key>name</key>
 	<string>navigation project</string>
 	<key>output</key>
-	<string>replaceSelectedText</string>
+	<string>showAsTooltip</string>
 	<key>uuid</key>
 	<string>5AB26B5D-7B50-4CE2-AEEC-EC9915B05890</string>
 </dict>

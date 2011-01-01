@@ -11,7 +11,7 @@ html_footer</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>^@M</string>
+	<string>^@L</string>
 	<key>name</key>
 	<string>Log file</string>
 	<key>output</key>
